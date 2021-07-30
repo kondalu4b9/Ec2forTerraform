@@ -39,12 +39,12 @@ jobs:
       - name: Verify Version
         run: terraform -v
         
-      - name: Terraform validation
-        run: terraform validate
-      
      # Initialize terraform
       - name: Terraform init
         run: terraform init
+    # Validation
+      - name: Terraform validation
+        run: terraform validate
     # Plan for Terraform
       - name: Terraform plan
         run: terraform plan
